@@ -1,6 +1,6 @@
 {
   "name": "flex.class",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Using Flexbox through class names",
   "main": "dist/flex.class.css",
   "scripts": {
