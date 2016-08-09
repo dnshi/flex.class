@@ -1,6 +1,6 @@
 /*!
  * flex.class - Using Flexbox through class names
- * @version v0.1.0
+ * @version v0.1.1
  * @license MIT
  */
 
@@ -15,13 +15,6 @@
       flex-flow: row wrap;
   -ms-flex-line-pack: stretch;
       align-content: stretch
-}
-
-.flex:after,
-.flex:before {
-  display: -ms-flexbox;
-  display: flex;
-  content: ''
 }
 
 
@@ -137,16 +130,16 @@
       align-items: flex-start
 }
 
-.flex.flex-align-center {
-  -ms-flex-align: flex-center;
-      -ms-grid-row-align: flex-center;
-      align-items: flex-center
-}
-
 .flex.flex-align-end {
   -ms-flex-align: end;
       -ms-grid-row-align: flex-end;
       align-items: flex-end
+}
+
+.flex.flex-align-center {
+  -ms-flex-align: flex-center;
+      -ms-grid-row-align: flex-center;
+      align-items: flex-center
 }
 
 .flex.flex-align-baseline {
@@ -166,6 +159,8 @@
  * Items
  */
 .flex-item {
+  -ms-flex-order: 0;
+      order: 0; /* fallback if attr() is not supported for properties other than content */
   -ms-flex-order: attr(flex-order number, 0);
       order: attr(flex-order number, 0);
   -ms-flex: 0 1 auto;
