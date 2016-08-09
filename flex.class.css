@@ -9,12 +9,6 @@
   align-content: stretch
 }
 
-.flex:after,
-.flex:before {
-  display: flex;
-  content: ''
-}
-
 
 /*
  * flex-direction
@@ -116,12 +110,12 @@
   align-items: flex-start
 }
 
-.flex.flex-align-center {
-  align-items: flex-center
-}
-
 .flex.flex-align-end {
   align-items: flex-end
+}
+
+.flex.flex-align-center {
+  align-items: flex-center
 }
 
 .flex.flex-align-baseline {
@@ -137,6 +131,7 @@
  * Items
  */
 .flex-item {
+  order: 0; /* fallback if attr() is not supported for properties other than content */
   order: attr(flex-order number, 0);
   flex: 0 1 auto /* default */
 }
