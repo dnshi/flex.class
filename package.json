@@ -1,0 +1,32 @@
+{
+  "name": "flex.class",
+  "version": "0.1.0",
+  "description": "Using Flexbox through class names",
+  "main": "dist/flex.class.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "flex ",
+    "flexbox",
+    "css",
+    "flex.class"
+  ],
+  "author": "Dean Shi <dean.xiaoshi@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-header": "^1.8.7",
+    "gulp-rename": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnshi/flex.class.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dnshi/flex.class/issues"
+  },
+  "homepage": "https://github.com/dnshi/flex.class#readme"
+}

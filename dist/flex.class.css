@@ -1,0 +1,205 @@
+/*!
+ * flex.class - Using Flexbox through class names
+ * @version v0.1.0
+ * @license MIT
+ */
+
+/*
+ * Container
+ */
+.flex {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch
+}
+
+.flex:after,
+.flex:before {
+  display: -ms-flexbox;
+  display: flex;
+  content: ''
+}
+
+
+/*
+ * flex-direction
+ *
+ * row (default):
+ *    left to right in ltr; right to left in rtl
+ * row-reverse:
+ *    right to left in ltr; left to right in rtl
+ * column:
+ *    same as row but top to bottom
+ * column-reverse:
+ *    same as row-reverse but bottom to top
+ */
+.flex.flex-row {
+  -ms-flex-direction: row;
+      flex-direction: row /* default */
+}
+
+.flex.flex-row-reverse {
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse
+}
+
+.flex.flex-column {
+  -ms-flex-direction: column;
+      flex-direction: column
+}
+
+.flex.flex-column-reverse {
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse
+}
+
+
+/*
+ * flex-wrap
+ *
+ * nowrap (default):
+ *    single-line / left to right in ltr; right to left in rtl
+ * wrap:
+ *    multi-line / left to right in ltr; right to left in rtl
+ * wrap-reverse:
+ *    multi-line / right to left in ltr; left to right in rtl
+ */
+.flex.flex-nowrap {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap /* default */
+}
+
+
+/*
+ * justify-content
+ *
+ * flex-start (default):
+ *    items are packed toward the start line
+ * flex-end:
+ *    items are packed toward to end line
+ * center:
+ *    items are centered along the line
+ * space-between:
+ *    items are evenly distributed in the line; first item is on the start line, last item on the end line
+ * space-around:
+ *    items are evenly distributed in the line with equal space around them. Note that visually the spaces
+ *    aren't equal, since all the items have equal space on both sides. The first item will have one unit
+ *    of space against the container edge, but two units of space between the next item because that next
+ *    item has its own spacing that applies.
+ */
+.flex.flex-justify-start {
+  -ms-flex-pack: start;
+      justify-content: flex-start /* default */
+}
+
+.flex.flex-justify-end {
+  -ms-flex-pack: end;
+      justify-content: flex-end
+}
+
+.flex.flex-justify-center {
+  -ms-flex-pack: center;
+      justify-content: center
+}
+
+.flex.flex-justify-space-between {
+  -ms-flex-pack: justify;
+      justify-content: space-between
+}
+
+.flex.flex-justify-space-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around
+}
+
+
+/*
+ * align-items
+ *
+ * flex-start:
+ *    cross-start margin edge of the items is placed on the cross-start line
+ * flex-end:
+ *    cross-end margin edge of the items is placed on the cross-end line
+ * center:
+ *    items are centered in the cross-axis
+ * baseline:
+ *    items are aligned such as their baselines align
+ * stretch (default):
+ *    stretch to fill the container (still respect min-width/max-width)
+ */
+.flex.flex-align-start {
+  -ms-flex-align: start;
+      -ms-grid-row-align: flex-start;
+      align-items: flex-start
+}
+
+.flex.flex-align-center {
+  -ms-flex-align: flex-center;
+      -ms-grid-row-align: flex-center;
+      align-items: flex-center
+}
+
+.flex.flex-align-end {
+  -ms-flex-align: end;
+      -ms-grid-row-align: flex-end;
+      align-items: flex-end
+}
+
+.flex.flex-align-baseline {
+  -ms-flex-align: baseline;
+      -ms-grid-row-align: baseline;
+      align-items: baseline
+}
+
+.flex.flex-align-stretch {
+  -ms-flex-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-items: stretch /* default */
+}
+
+
+/*
+ * Items
+ */
+.flex-item {
+  -ms-flex-order: attr(flex-order number, 0);
+      order: attr(flex-order number, 0);
+  -ms-flex: 0 1 auto;
+      flex: 0 1 auto /* default */
+}
+
+
+/*
+ * align-self
+ *
+ * This allows the default alignment (or the one specified by align-items)
+ * to be overridden for individual flex items.
+ */
+.flex-item.flex-align-start {
+  -ms-flex-item-align: start;
+      align-self: flex-start
+}
+
+.flex-item.flex-align-center {
+  -ms-flex-item-align: center;
+      align-self: center
+}
+
+.flex-item.flex-align-end {
+  -ms-flex-item-align: end;
+      align-self: flex-end
+}
+
+.flex-item.flex-align-baseline {
+  -ms-flex-item-align: baseline;
+      align-self: baseline
+}
+
+.flex-item.flex-align-stretch {
+  -ms-flex-item-align: stretch;
+      align-self: stretch
+}
