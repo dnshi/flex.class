@@ -4,6 +4,7 @@
   "description": "Using Flexbox through class names",
   "main": "dist/flex.class.css",
   "scripts": {
+    "prepublish": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
