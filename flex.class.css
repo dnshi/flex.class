@@ -71,23 +71,28 @@
  *    of space against the container edge, but two units of space between the next item because that next
  *    item has its own spacing that applies.
  */
-.flex.flex-justify-start {
+.flex.flex-justify-start,
+.flex.align-left {
   justify-content: flex-start /* default */
 }
 
-.flex.flex-justify-end {
+.flex.flex-justify-end,
+.flex.align-right {
   justify-content: flex-end
 }
 
-.flex.flex-justify-center {
+.flex.flex-justify-center,
+.flex.align-center {
   justify-content: center
 }
 
-.flex.flex-justify-space-between {
+.flex.flex-justify-space-between,
+.flex.align-justify {
   justify-content: space-between
 }
 
-.flex.flex-justify-space-around {
+.flex.flex-justify-space-around,
+.flex.align-spaced {
   justify-content: space-around
 }
 
@@ -106,23 +111,28 @@
  * stretch (default):
  *    stretch to fill the container (still respect min-width/max-width)
  */
-.flex.flex-align-start {
+.flex.flex-align-start,
+.flex.align-top {
   align-items: flex-start
 }
 
-.flex.flex-align-end {
+.flex.flex-align-end,
+.flex.align-bottom {
   align-items: flex-end
 }
 
-.flex.flex-align-center {
+.flex.flex-align-center,
+.flex.align-middle {
   align-items: flex-center
 }
 
-.flex.flex-align-baseline {
+.flex.flex-align-baseline,
+.flex.align-baseline {
   align-items: baseline
 }
 
-.flex.flex-align-stretch {
+.flex.flex-align-stretch,
+.flex.align-stretch {
   align-items: stretch /* default */
 }
 
@@ -143,22 +153,27 @@
  * This allows the default alignment (or the one specified by align-items)
  * to be overridden for individual flex items.
  */
-.flex-item.flex-align-start {
+.flex-item.flex-align-start,
+.flex-item.align-self-top {
   align-self: flex-start
 }
 
-.flex-item.flex-align-center {
-  align-self: center
-}
-
-.flex-item.flex-align-end {
+.flex-item.flex-align-end,
+.flex-item.align-self-bottom {
   align-self: flex-end
 }
 
-.flex-item.flex-align-baseline {
+.flex-item.flex-align-center,
+.flex-item.align-self-middle {
+  align-self: center
+}
+
+.flex-item.flex-align-baseline,
+.flex-item.align-self-baseline {
   align-self: baseline
 }
 
-.flex-item.flex-align-stretch {
+.flex-item.flex-align-stretch,
+.flex-item.align-self-stretch {
   align-self: stretch
 }
