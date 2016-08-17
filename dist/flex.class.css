@@ -1,6 +1,6 @@
 /*!
  * flex.class - Using Flexbox through class names
- * @version v0.1.1
+ * @version v0.1.3
  * @license MIT
  */
 
@@ -84,27 +84,32 @@
  *    of space against the container edge, but two units of space between the next item because that next
  *    item has its own spacing that applies.
  */
-.flex.flex-justify-start {
+.flex.flex-justify-start,
+.flex.align-left {
   -ms-flex-pack: start;
       justify-content: flex-start /* default */
 }
 
-.flex.flex-justify-end {
+.flex.flex-justify-end,
+.flex.align-right {
   -ms-flex-pack: end;
       justify-content: flex-end
 }
 
-.flex.flex-justify-center {
+.flex.flex-justify-center,
+.flex.align-center {
   -ms-flex-pack: center;
       justify-content: center
 }
 
-.flex.flex-justify-space-between {
+.flex.flex-justify-space-between,
+.flex.align-justify {
   -ms-flex-pack: justify;
       justify-content: space-between
 }
 
-.flex.flex-justify-space-around {
+.flex.flex-justify-space-around,
+.flex.align-spaced {
   -ms-flex-pack: distribute;
       justify-content: space-around
 }
@@ -124,31 +129,36 @@
  * stretch (default):
  *    stretch to fill the container (still respect min-width/max-width)
  */
-.flex.flex-align-start {
+.flex.flex-align-start,
+.flex.align-top {
   -ms-flex-align: start;
       -ms-grid-row-align: flex-start;
       align-items: flex-start
 }
 
-.flex.flex-align-end {
+.flex.flex-align-end,
+.flex.align-bottom {
   -ms-flex-align: end;
       -ms-grid-row-align: flex-end;
       align-items: flex-end
 }
 
-.flex.flex-align-center {
+.flex.flex-align-center,
+.flex.align-middle {
   -ms-flex-align: flex-center;
       -ms-grid-row-align: flex-center;
       align-items: flex-center
 }
 
-.flex.flex-align-baseline {
+.flex.flex-align-baseline,
+.flex.align-baseline {
   -ms-flex-align: baseline;
       -ms-grid-row-align: baseline;
       align-items: baseline
 }
 
-.flex.flex-align-stretch {
+.flex.flex-align-stretch,
+.flex.align-stretch {
   -ms-flex-align: stretch;
       -ms-grid-row-align: stretch;
       align-items: stretch /* default */
@@ -174,27 +184,32 @@
  * This allows the default alignment (or the one specified by align-items)
  * to be overridden for individual flex items.
  */
-.flex-item.flex-align-start {
+.flex-item.flex-align-start,
+.flex-item.align-self-top {
   -ms-flex-item-align: start;
       align-self: flex-start
 }
 
-.flex-item.flex-align-center {
-  -ms-flex-item-align: center;
-      align-self: center
-}
-
-.flex-item.flex-align-end {
+.flex-item.flex-align-end,
+.flex-item.align-self-bottom {
   -ms-flex-item-align: end;
       align-self: flex-end
 }
 
-.flex-item.flex-align-baseline {
+.flex-item.flex-align-center,
+.flex-item.align-self-middle {
+  -ms-flex-item-align: center;
+      align-self: center
+}
+
+.flex-item.flex-align-baseline,
+.flex-item.align-self-baseline {
   -ms-flex-item-align: baseline;
       align-self: baseline
 }
 
-.flex-item.flex-align-stretch {
+.flex-item.flex-align-stretch,
+.flex-item.align-self-stretch {
   -ms-flex-item-align: stretch;
       align-self: stretch
 }
