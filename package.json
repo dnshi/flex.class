@@ -2,7 +2,7 @@
   "name": "flex.class",
   "version": "0.1.3",
   "description": "Using Flexbox through class names",
-  "main": "dist/flex.class.css",
+  "main": "flex.class.css",
   "scripts": {
     "prepublish": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
