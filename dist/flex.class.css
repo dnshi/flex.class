@@ -1,13 +1,17 @@
 /*!
  * flex.class - Using Flexbox through class names
- * @version v0.1.4
+ * @version v0.2.0
  * @license MIT
  */
+//
+// Note: fc - prefix for flex class
+//
 
 /*
  * Container
  */
-.flex {
+.flex,
+.fc {
   height: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -30,22 +34,26 @@
  * column-reverse:
  *    same as row-reverse but bottom to top
  */
-.flex.flex-row {
+.flex.flex-row,
+.fc-row {
   -ms-flex-direction: row;
       flex-direction: row /* default */
 }
 
-.flex.flex-row-reverse {
+.flex.flex-row-reverse,
+.fc-row-reverse {
   -ms-flex-direction: row-reverse;
       flex-direction: row-reverse
 }
 
-.flex.flex-column {
+.flex.flex-column,
+.fc-col {
   -ms-flex-direction: column;
       flex-direction: column
 }
 
-.flex.flex-column-reverse {
+.flex.flex-column-reverse,
+.fc-col-reverse {
   -ms-flex-direction: column-reverse;
       flex-direction: column-reverse
 }
@@ -61,7 +69,8 @@
  * wrap-reverse:
  *    multi-line / right to left in ltr; left to right in rtl
  */
-.flex.flex-nowrap {
+.flex.flex-nowrap,
+.fc-nowrap {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap /* default */
 }
@@ -85,31 +94,31 @@
  *    item has its own spacing that applies.
  */
 .flex.flex-justify-start,
-.flex.align-left {
+.fc-left {
   -ms-flex-pack: start;
       justify-content: flex-start /* default */
 }
 
 .flex.flex-justify-end,
-.flex.align-right {
+.fc-right {
   -ms-flex-pack: end;
       justify-content: flex-end
 }
 
 .flex.flex-justify-center,
-.flex.align-center {
+.fc-center {
   -ms-flex-pack: center;
       justify-content: center
 }
 
 .flex.flex-justify-space-between,
-.flex.align-justify {
+.fc-between {
   -ms-flex-pack: justify;
       justify-content: space-between
 }
 
 .flex.flex-justify-space-around,
-.flex.align-spaced {
+.fc-around {
   -ms-flex-pack: distribute;
       justify-content: space-around
 }
@@ -130,35 +139,35 @@
  *    stretch to fill the container (still respect min-width/max-width)
  */
 .flex.flex-align-start,
-.flex.align-top {
+.fc-top {
   -ms-flex-align: start;
       -ms-grid-row-align: flex-start;
       align-items: flex-start
 }
 
 .flex.flex-align-end,
-.flex.align-bottom {
+.fc-bottom {
   -ms-flex-align: end;
       -ms-grid-row-align: flex-end;
       align-items: flex-end
 }
 
 .flex.flex-align-center,
-.flex.align-middle {
+.fc-middle {
   -ms-flex-align: flex-center;
       -ms-grid-row-align: flex-center;
       align-items: flex-center
 }
 
 .flex.flex-align-baseline,
-.flex.align-baseline {
+.fc-baseline {
   -ms-flex-align: baseline;
       -ms-grid-row-align: baseline;
       align-items: baseline
 }
 
 .flex.flex-align-stretch,
-.flex.align-stretch {
+.fc-stretch {
   -ms-flex-align: stretch;
       -ms-grid-row-align: stretch;
       align-items: stretch /* default */
@@ -168,7 +177,8 @@
 /*
  * Items
  */
-.flex-item {
+.flex-item,
+.fc-item {
   -ms-flex-order: 0;
       order: 0; /* fallback if attr() is not supported for properties other than content */
   -ms-flex-order: attr(flex-order number, 0);
@@ -185,31 +195,31 @@
  * to be overridden for individual flex items.
  */
 .flex-item.flex-align-start,
-.flex-item.align-self-top {
+.fc-item-top {
   -ms-flex-item-align: start;
       align-self: flex-start
 }
 
 .flex-item.flex-align-end,
-.flex-item.align-self-bottom {
+.fc-item-bottom {
   -ms-flex-item-align: end;
       align-self: flex-end
 }
 
 .flex-item.flex-align-center,
-.flex-item.align-self-middle {
+.fc-item-middle {
   -ms-flex-item-align: center;
       align-self: center
 }
 
 .flex-item.flex-align-baseline,
-.flex-item.align-self-baseline {
+.fc-item-baseline {
   -ms-flex-item-align: baseline;
       align-self: baseline
 }
 
 .flex-item.flex-align-stretch,
-.flex-item.align-self-stretch {
+.fc-item-stretch {
   -ms-flex-item-align: stretch;
       align-self: stretch
 }
