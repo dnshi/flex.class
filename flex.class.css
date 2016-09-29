@@ -1,8 +1,12 @@
+//
+// Note: fc - prefix for flex class
+//
 
 /*
  * Container
  */
-.flex {
+.flex,
+.fc {
   height: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -22,19 +26,23 @@
  * column-reverse:
  *    same as row-reverse but bottom to top
  */
-.flex.flex-row {
+.flex.flex-row,
+.fc-row {
   flex-direction: row /* default */
 }
 
-.flex.flex-row-reverse {
+.flex.flex-row-reverse,
+.fc-row-reverse {
   flex-direction: row-reverse
 }
 
-.flex.flex-column {
+.flex.flex-column,
+.fc-col {
   flex-direction: column
 }
 
-.flex.flex-column-reverse {
+.flex.flex-column-reverse,
+.fc-col-reverse {
   flex-direction: column-reverse
 }
 
@@ -49,7 +57,8 @@
  * wrap-reverse:
  *    multi-line / right to left in ltr; left to right in rtl
  */
-.flex.flex-nowrap {
+.flex.flex-nowrap,
+.fc-nowrap {
   flex-wrap: nowrap /* default */
 }
 
@@ -72,27 +81,27 @@
  *    item has its own spacing that applies.
  */
 .flex.flex-justify-start,
-.flex.align-left {
+.fc-left {
   justify-content: flex-start /* default */
 }
 
 .flex.flex-justify-end,
-.flex.align-right {
+.fc-right {
   justify-content: flex-end
 }
 
 .flex.flex-justify-center,
-.flex.align-center {
+.fc-center {
   justify-content: center
 }
 
 .flex.flex-justify-space-between,
-.flex.align-justify {
+.fc-between {
   justify-content: space-between
 }
 
 .flex.flex-justify-space-around,
-.flex.align-spaced {
+.fc-around {
   justify-content: space-around
 }
 
@@ -112,27 +121,27 @@
  *    stretch to fill the container (still respect min-width/max-width)
  */
 .flex.flex-align-start,
-.flex.align-top {
+.fc-top {
   align-items: flex-start
 }
 
 .flex.flex-align-end,
-.flex.align-bottom {
+.fc-bottom {
   align-items: flex-end
 }
 
 .flex.flex-align-center,
-.flex.align-middle {
+.fc-middle {
   align-items: flex-center
 }
 
 .flex.flex-align-baseline,
-.flex.align-baseline {
+.fc-baseline {
   align-items: baseline
 }
 
 .flex.flex-align-stretch,
-.flex.align-stretch {
+.fc-stretch {
   align-items: stretch /* default */
 }
 
@@ -140,7 +149,8 @@
 /*
  * Items
  */
-.flex-item {
+.flex-item,
+.fc-item {
   order: 0; /* fallback if attr() is not supported for properties other than content */
   order: attr(flex-order number, 0);
   flex: 0 1 auto /* default */
@@ -154,26 +164,26 @@
  * to be overridden for individual flex items.
  */
 .flex-item.flex-align-start,
-.flex-item.align-self-top {
+.fc-item-top {
   align-self: flex-start
 }
 
 .flex-item.flex-align-end,
-.flex-item.align-self-bottom {
+.fc-item-bottom {
   align-self: flex-end
 }
 
 .flex-item.flex-align-center,
-.flex-item.align-self-middle {
+.fc-item-middle {
   align-self: center
 }
 
 .flex-item.flex-align-baseline,
-.flex-item.align-self-baseline {
+.fc-item-baseline {
   align-self: baseline
 }
 
 .flex-item.flex-align-stretch,
-.flex-item.align-self-stretch {
+.fc-item-stretch {
   align-self: stretch
 }

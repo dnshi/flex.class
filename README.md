@@ -34,53 +34,53 @@ or
 ## Class names
 
 ### `Container`
-* **flex**
+* **fc | flex**
 
 ### `flex-direction`
-* **flex-row** - (_default_) left to right in ltr; right to left in rtl
+* **fc-row | flex-row** - (_default_) left to right in ltr; right to left in rtl
 
-* **flex-row-reverse** - right to left in ltr; left to right in rtl
+* **fc-row-reverse | flex-row-reverse** - right to left in ltr; left to right in rtl
 
-* **flex-column** - same as row but top to bottom
+* **fc-col | flex-column** - same as row but top to bottom
 
-* **flex-column-reverse** - same as row-reverse but bottom to top
+* **fc-col-reverse | flex-column-reverse** - same as row-reverse but bottom to top
 
 ### `flex-wrap`
-* **flex-nowrap** - (_default_) single-line / left to right in ltr; right to left in rtl
+* **fc-nowrap | flex-nowrap** - (_default_) single-line / left to right in ltr; right to left in rtl
 
 ### `Horizontal Alignment - justify-content`
-* **align-left | flex-justify-start** - (_default_) items are packed toward the start line
+* **fc-left | flex-justify-start** - (_default_) items are packed toward the start line
 
-* **align-right | flex-justify-end** - items are packed toward to end line
+* **fc-right | flex-justify-end** - items are packed toward to end line
 
-* **align-center | flex-justify-center** - items are centered along the line
+* **fc-center | flex-justify-center** - items are centered along the line
 
-* **align-justify | flex-justify-space-between** - first item is on the start line, last item on the end line
+* **fc-between | flex-justify-space-between** - first item is on the start line, last item on the end line
 
-* **align-spaced | flex-justify-space-around** - first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies
+* **fc-around | flex-justify-space-around** - first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies
 
 ### `Vertical Alignment - align-items`
-* **align-top | flex-align-start** - cross-start margin edge of the items is placed on the cross-start line
+* **fc-top | flex-align-start** - cross-start margin edge of the items is placed on the cross-start line
 
-* **align-bottom | flex-align-end** - cross-end margin edge of the items is placed on the cross-end line
+* **fc-bottom | flex-align-end** - cross-end margin edge of the items is placed on the cross-end line
 
-* **align-middle | flex-align-center** - items are centered in the cross-axis
+* **fc-middle | flex-align-center** - items are centered in the cross-axis
 
-* **align-baseline | flex-align-baseline** - items are aligned such as their baselines align
+* **fc-baseline | flex-align-baseline** - items are aligned such as their baselines align
 
-* **align-stretch | flex-align-stretch** - (_default_) stretch to fill the container (still respect min-width/max-width)
+* **fc-stretch | flex-align-stretch** - (_default_) stretch to fill the container (still respect min-width/max-width)
 
 ### `Items`
-* **flex-item**
+* **fc-item | flex-item**
 
 ### `align-self`
 * This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
-* **align-self-top | flex-align-start**
+* **fc-item-top | flex-align-start**
 
-* **align-self-bottom | flex-align-end**
+* **fc-item-bottom | flex-align-end**
 
-* **align-self-middle | flex-align-center**
+* **fc-item-middle | flex-align-center**
 
-* **align-self-baseline | flex-align-baseline**
+* **fc-item-baseline | flex-align-baseline**
 
-* **align-self-stretch | flex-align-stretch**
+* **fc-item-stretch | flex-align-stretch**
