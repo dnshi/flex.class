@@ -1,14 +1,12 @@
 /*!
  * flex.class - Using Flexbox through class names
- * @version v0.2.0
+ * @version v0.2.1
  * @license MIT
  */
-//
-// Note: fc - prefix for flex class
-//
 
 /*
  * Container
+ * Note: fc - prefix for flex class
  */
 .flex,
 .fc {
