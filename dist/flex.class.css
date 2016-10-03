@@ -1,6 +1,6 @@
 /*!
  * flex.class - Using Flexbox through class names
- * @version v0.2.2
+ * @version v0.2.3
  * @license MIT
  */
 
@@ -181,8 +181,8 @@
       order: 0; /* fallback if attr() is not supported for properties other than content */
   -ms-flex-order: attr(flex-order number, 0);
       order: attr(flex-order number, 0);
-  -ms-flex: 0 1 auto;
-      flex: 0 1 auto /* default */
+  -ms-flex: 1;
+      flex: 1
 }
 
 
