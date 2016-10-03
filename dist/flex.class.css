@@ -1,6 +1,6 @@
 /*!
  * flex.class - Using Flexbox through class names
- * @version v0.2.1
+ * @version v0.2.2
  * @license MIT
  */
 
@@ -152,9 +152,9 @@
 
 .flex.flex-align-center,
 .fc-middle {
-  -ms-flex-align: flex-center;
-      -ms-grid-row-align: flex-center;
-      align-items: flex-center
+  -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center
 }
 
 .flex.flex-align-baseline,
