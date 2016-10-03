@@ -151,7 +151,7 @@
 .fc-item {
   order: 0; /* fallback if attr() is not supported for properties other than content */
   order: attr(flex-order number, 0);
-  flex: 0 1 auto /* default */
+  flex: 1
 }
 
 
