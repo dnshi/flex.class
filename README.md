@@ -20,14 +20,15 @@ npm install -S flex.class
 </ul>
 ```
 or
+#### (Recommended)
 ```
-<ul class="flex align-justify">
-  <li class="flex-item">1</li>
-  <li class="flex-item">2</li>
-  <li class="flex-item align-self-bottom">3</li>
-  <li class="flex-item">4</li>
-  <li class="flex-item">5</li>
-  <li class="flex-item">6</li>
+<ul class="fc fc-col">
+  <li class="fc-item">1</li>
+  <li class="fc-item">2</li>
+  <li class="fc-item fc-item-bottom">3</li>
+  <li class="fc-item">4</li>
+  <li class="fc-item">5</li>
+  <li class="fc-item">6</li>
 </ul>
 ```
 
